@@ -12,13 +12,12 @@ public class Main {
         System.out.println("Press enter to continue.");
         scanner.nextLine();
 
+        System.out.println("LET'S START THE GAME");
         System.out.println("Choose difficulty: ");
         System.out.println("1. Easy");
         System.out.println("2. Medium");
         System.out.println("3. Hard");
         chosenDifficultyLevel = scanner.nextInt();
-
-        System.out.println("LET'S START THE GAME");
 
         switch (chosenDifficultyLevel) {
             case 1 -> difficultyLevel.difficultyLevelEasy();
