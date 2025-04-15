@@ -1,25 +1,30 @@
-import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
+        DifficultyLevel difficultyLevel = new DifficultyLevel();
 
-        int randomNumber = random.nextInt(1,5);
-        //scanner.nextLine();
+        int chosenDifficultyLevel;
 
-        System.out.print("Guess the number: ");
-        int gussedNumber = scanner.nextInt();
+        System.out.println("GUESS THE RANDOM NUMBER");
+        System.out.println("Press enter to continue.");
+        scanner.nextLine();
 
-        if (gussedNumber == randomNumber) {
+        System.out.println("Choose difficulty: ");
+        System.out.println("1. Easy");
+        System.out.println("2. Medium");
+        System.out.println("3. Hard");
+        chosenDifficultyLevel = scanner.nextInt();
 
-            System.out.println("Random Number: " + randomNumber);
-            System.out.println("Congratulations! You have guessed the correct number.");
-        }
-        else {
-            System.out.println("Try again next time.");
+        System.out.println("LET'S START THE GAME");
+
+        switch (chosenDifficultyLevel) {
+            case 1 -> difficultyLevel.difficultyLevelEasy();
+            case 2 -> difficultyLevel.difficultyLevelMedium();
+            case 3 -> difficultyLevel.difficultyLevelHard();
+            default -> System.out.println("Invalid Option!");
         }
 
     }
