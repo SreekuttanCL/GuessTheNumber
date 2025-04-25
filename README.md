@@ -19,7 +19,7 @@ A simple and fun number guessing game written in Java with three difficulty leve
 
 ### 📸 Demo
 
-*(Optional: Add a GIF or screenshot of your game running in the terminal)*
+![Alt Text] (GuessTheNumberImg.jpeg)
 
 ---
 
